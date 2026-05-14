@@ -7,47 +7,41 @@ import { motion, useInView } from 'framer-motion'
 const clasicos = [
   {
     categoria: 'Cremas',
-    from: '#C4B687', to: '#C4B687',
-    cardBg: '#C4B687', cardDark: false,
+    cardBg: '#EFEDDC', cardDark: false,
     sabores: ['Vainilla', 'Oreo', 'Almendrado', 'Americana', 'Sambayón', 'Crema del Cielo', 'Menta Granizada', 'Mascarpone c/ F. rojos'],
   },
   {
     categoria: 'Frutales',
-    from: '#e8aa88', to: '#D79074',
-    cardBg: '#D79074', cardDark: false,
+    cardBg: '#EFEDDC', cardDark: false,
     sabores: ['Frutilla al agua', 'Frutilla a la reina', 'Limón', 'Pera', 'Melón', 'Sandía', 'Mandarina'],
   },
   {
     categoria: 'Chocolates',
-    from: '#5F3641', to: '#3a1e28',
-    cardBg: '#5F3641', cardDark: true,
+    cardBg: '#EFEDDC', cardDark: false,
     sabores: ['Clásico', 'Blanco', 'Volcán de Chocolate', 'Cacao 80%', 'Kaiken'],
   },
   {
     categoria: 'Sin Azúcar',
-    from: '#EFEDDC', to: '#C4B687',
-    cardBg: '#C4B687', cardDark: false,
+    cardBg: '#EFEDDC', cardDark: false,
     sabores: ['Frutilla', 'Americana', 'Chocolate', 'Durazno', 'Dulce de Leche'],
   },
   {
     categoria: 'Dulce de Leche',
-    from: '#D79074', to: '#5F3641',
-    cardBg: '#D79074', cardDark: false,
+    cardBg: '#EFEDDC', cardDark: false,
     sabores: ['Clásico', 'Granizado', 'Con Brownie', 'Colonial', 'Con Bombon'],
   },
 ]
 
-// cardDark: true → texto crema (card oscura); false → texto bordó (card clara)
 const especiales = [
-  { nombre: 'Vainilla Kaiken',      descripcion: 'Vainilla con dulce de leche natural y almendras garrapiñadas',              cardBg: '#D79074', cardDark: false },
-  { nombre: 'Frambuesa Patagónica', descripcion: 'Frambuesas a la crema con frambuesas bañadas en chocolate blanco y negro',    cardBg: '#C4B687', cardDark: false },
-  { nombre: 'ChocoRock',            descripcion: 'Chocolate con cucuruchos bañados en chocolate y dulce de leche natural',      cardBg: '#5F3641', cardDark: true  },
-  { nombre: 'Pistacho',             descripcion: 'Pistacho a la crema con pistacho tostado en trozos',                          cardBg: '#D79074', cardDark: false },
-  { nombre: 'Volcán de Chocolate',  descripcion: 'Chocolate con frutos rojos y torta volcán',                                   cardBg: '#C4B687', cardDark: false },
-  { nombre: 'Raffaello',            descripcion: 'Chocolate blanco con coco y crocante de almendras',                           cardBg: '#D79074', cardDark: false },
-  { nombre: 'Pavlova',              descripcion: 'Crema americana con frutos rojos y merengue',                                 cardBg: '#5F3641', cardDark: true  },
-  { nombre: 'Marquise',             descripcion: 'Chocolate con dulce de leche natural y merengue italiano',                    cardBg: '#C4B687', cardDark: false },
-  { nombre: 'Choco Menta',          descripcion: 'Helado de chocolate semi amargo con menta fresca',                            cardBg: '#D79074', cardDark: false },
+  { nombre: 'Vainilla Kaiken',      descripcion: 'Vainilla con dulce de leche natural y almendras garrapiñadas',           cardBg: '#C4B687', cardDark: false, imgT: 'none' },
+  { nombre: 'Frambuesa Patagónica', descripcion: 'Frambuesas a la crema con frambuesas bañadas en chocolate blanco y negro', cardBg: '#C4B687', cardDark: false, imgT: 'scaleX(-1)' },
+  { nombre: 'ChocoRock',            descripcion: 'Chocolate con cucuruchos bañados en chocolate y dulce de leche natural',  cardBg: '#C4B687', cardDark: false, imgT: 'rotate(8deg) scale(1.1)' },
+  { nombre: 'Pistacho',             descripcion: 'Pistacho a la crema con pistacho tostado en trozos',                     cardBg: '#C4B687', cardDark: false, imgT: 'scaleX(-1) rotate(-6deg)' },
+  { nombre: 'Volcán de Chocolate',  descripcion: 'Chocolate con frutos rojos y torta volcán',                              cardBg: '#C4B687', cardDark: false, imgT: 'rotate(-8deg) scale(1.05)' },
+  { nombre: 'Raffaello',            descripcion: 'Chocolate blanco con coco y crocante de almendras',                      cardBg: '#C4B687', cardDark: false, imgT: 'scaleX(-1) scale(1.06)' },
+  { nombre: 'Pavlova',              descripcion: 'Crema americana con frutos rojos y merengue',                            cardBg: '#C4B687', cardDark: false, imgT: 'rotate(5deg)' },
+  { nombre: 'Marquise',             descripcion: 'Chocolate con dulce de leche natural y merengue italiano',               cardBg: '#C4B687', cardDark: false, imgT: 'scaleX(-1) rotate(6deg)' },
+  { nombre: 'Choco Menta',          descripcion: 'Helado de chocolate semi amargo con menta fresca',                       cardBg: '#C4B687', cardDark: false, imgT: 'rotate(-5deg) scale(1.08)' },
 ]
 
 const galeria = [
@@ -191,11 +185,11 @@ export default function GustosSection() {
                 className="w-44 sm:w-52 flex-shrink-0 rounded-2xl overflow-hidden"
                 style={{
                   background: cat.cardBg,
-                  boxShadow: cat.cardDark ? 'none' : '0 8px 24px rgba(95,54,65,0.08)',
+                  border: '1.5px solid #C4B687',
                 }}
               >
                 {/* Categoria header */}
-                <div className="px-5 py-4" style={{ background: 'rgba(0,0,0,0.12)' }}>
+                <div className="px-5 py-4" style={{ background: '#C4B687' }}>
                   <p
                     className="font-sans font-bold text-[10px] tracking-[0.36em] uppercase"
                     style={{ color: cat.cardDark ? '#EFEDDC' : 'rgba(95,54,65,1)' }}
@@ -234,21 +228,38 @@ export default function GustosSection() {
                 boxShadow: s.cardDark ? 'none' : '0 8px 24px rgba(95,54,65,0.08)',
               }}
             >
-              {/* Nombre */}
-              <div className="absolute inset-0 flex flex-col items-center justify-center px-5 transition-opacity duration-300 group-hover:opacity-0">
-                <span
-                  className="font-sans font-semibold text-base text-center leading-tight tracking-wide"
-                  style={{ color: s.cardDark ? '#EFEDDC' : 'rgba(95,54,65,1)' }}
-                >
-                  {s.nombre}
-                </span>
-                <span
-                  className="mt-4 block w-5 h-px"
-                  style={{ background: s.cardDark ? 'rgba(239,237,220,0.4)' : 'rgba(95,54,65,0.3)' }}
+              {/* Ilustración — llena la card con blend mode */}
+              <div className="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0">
+                <Image
+                  src="/images/heladodibujo.png"
+                  alt=""
+                  fill
+                  className="object-contain object-center"
+                  style={{
+                    mixBlendMode: s.cardDark ? 'screen' : 'multiply',
+                    filter: s.cardDark ? 'invert(1)' : 'none',
+                    opacity: 0.7,
+                    transform: s.imgT,
+                  }}
+                  draggable={false}
                 />
               </div>
 
-              {/* Ingredientes on hover — always dark overlay */}
+              {/* Nombre siempre visible */}
+              <div
+                className="absolute bottom-0 inset-x-0 px-4 pb-4 pt-10 transition-opacity duration-300 group-hover:opacity-0"
+                style={{
+                  background: s.cardDark
+                    ? 'linear-gradient(to top, rgba(0,0,0,0.55) 0%, transparent 100%)'
+                    : 'linear-gradient(to top, rgba(95,54,65,0.5) 0%, transparent 100%)',
+                }}
+              >
+                <p className="font-sans font-semibold text-sm leading-tight" style={{ color: '#EFEDDC' }}>
+                  {s.nombre}
+                </p>
+              </div>
+
+              {/* Hover — nombre + descripción */}
               <div
                 className="absolute inset-0 flex flex-col justify-between px-5 py-5 opacity-0 translate-y-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0"
                 style={{ background: 'linear-gradient(140deg, #5F3641, #3a1e28)' }}
