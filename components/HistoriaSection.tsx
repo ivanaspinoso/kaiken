@@ -73,14 +73,23 @@ export default function HistoriaSection() {
             Somos Kaikén: una familia heladera.
           </p>
 
+          
+
           <motion.div
-            initial={{ opacity: 0, x: 16 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="inline-block border-l-2 border-terracotta/50 pl-4"
+            initial={{ opacity: 0, y: 16 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.55 }}
+            className="mt-10 pt-8 border-t border-burgundy/10"
           >
-            <p className="font-sans font-light text-xs text-burgundy/40 tracking-wide italic">
+            <address className="not-italic font-sans text-sm text-burgundy/60 leading-relaxed mb-5">
+              Gral. Miguel Soler 462<br />
               Ituzaingó, Buenos Aires
+            </address>
+            <p className="font-sans text-sm text-burgundy/50 mb-1">
+              <span className="text-burgundy/70 font-medium">Mar — Jue</span> &nbsp;12:00–00:00
+            </p>
+            <p className="font-sans text-sm text-burgundy/50">
+              <span className="text-burgundy/70 font-medium">Vie · Sáb · Dom</span> &nbsp;12:00–01:00
             </p>
           </motion.div>
         </motion.div>
