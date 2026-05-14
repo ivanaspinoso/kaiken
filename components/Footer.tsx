@@ -6,20 +6,11 @@ import { trackCTAClick } from '@/lib/analytics'
 
 const navCols = [
   {
-    heading: 'Descubrí',
+    heading: 'Menú',
     links: [
-      { label: 'Sabores', href: '#sabores' },
-      { label: 'Cafetería', href: '#experiencia' },
-      { label: 'Pastelería', href: '#experiencia' },
+      { label: 'La carta', href: '#carta' },
       { label: 'Nuestra historia', href: '#historia' },
-    ],
-  },
-  {
-    heading: 'Información',
-    links: [
       { label: 'Dónde estamos', href: '#contacto' },
-      { label: 'Franquicias', href: '#franquicias' },
-      { label: 'Contacto', href: '#contacto' },
     ],
   },
 ]
@@ -62,10 +53,10 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-5 md:px-10 pt-14 md:pt-20 pb-8">
 
         {/* Top grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-8 mb-12 md:mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 md:gap-12 mb-12 md:mb-16">
 
           {/* Brand col */}
-          <div className="col-span-1 sm:col-span-2 md:col-span-1">
+          <div>
             <a href="#" className="inline-block mb-4">
               <Image
                 src="/images/kaikenlogocompletoverde.PNG"

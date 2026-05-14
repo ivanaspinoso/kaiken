@@ -33,26 +33,25 @@ const clasicos = [
 ]
 
 const especiales = [
-  { nombre: 'Vainilla Kaiken',      descripcion: 'Vainilla con dulce de leche natural y almendras garrapiñadas',           cardBg: '#C4B687', cardDark: false, imgT: 'none' },
-  { nombre: 'Frambuesa Patagónica', descripcion: 'Frambuesas a la crema con frambuesas bañadas en chocolate blanco y negro', cardBg: '#C4B687', cardDark: false, imgT: 'scaleX(-1)' },
-  { nombre: 'ChocoRock',            descripcion: 'Chocolate con cucuruchos bañados en chocolate y dulce de leche natural',  cardBg: '#C4B687', cardDark: false, imgT: 'rotate(8deg) scale(1.1)' },
-  { nombre: 'Pistacho',             descripcion: 'Pistacho a la crema con pistacho tostado en trozos',                     cardBg: '#C4B687', cardDark: false, imgT: 'scaleX(-1) rotate(-6deg)' },
-  { nombre: 'Volcán de Chocolate',  descripcion: 'Chocolate con frutos rojos y torta volcán',                              cardBg: '#C4B687', cardDark: false, imgT: 'rotate(-8deg) scale(1.05)' },
-  { nombre: 'Raffaello',            descripcion: 'Chocolate blanco con coco y crocante de almendras',                      cardBg: '#C4B687', cardDark: false, imgT: 'scaleX(-1) scale(1.06)' },
-  { nombre: 'Pavlova',              descripcion: 'Crema americana con frutos rojos y merengue',                            cardBg: '#C4B687', cardDark: false, imgT: 'rotate(5deg)' },
-  { nombre: 'Marquise',             descripcion: 'Chocolate con dulce de leche natural y merengue italiano',               cardBg: '#C4B687', cardDark: false, imgT: 'scaleX(-1) rotate(6deg)' },
-  { nombre: 'Choco Menta',          descripcion: 'Helado de chocolate semi amargo con menta fresca',                       cardBg: '#C4B687', cardDark: false, imgT: 'rotate(-5deg) scale(1.08)' },
+  { nombre: 'Vainilla Kaiken',      descripcion: 'Vainilla con dulce de leche natural y almendras garrapiñadas',           cardBg: '#C4B687', cardDark: false, img: '/images/Vainilla%20kaiken.png' },
+  { nombre: 'Frambuesa Patagónica', descripcion: 'Frambuesas a la crema con frambuesas bañadas en chocolate blanco y negro', cardBg: '#C4B687', cardDark: false, img: '/images/Frambuesa%20patagonica.png' },
+  { nombre: 'ChocoRock',            descripcion: 'Chocolate con cucuruchos bañados en chocolate y dulce de leche natural',  cardBg: '#C4B687', cardDark: false, img: '/images/Chocorock.png' },
+  { nombre: 'Pistacho',             descripcion: 'Pistacho a la crema con pistacho tostado en trozos',                     cardBg: '#C4B687', cardDark: false, img: '/images/Pistacho.png' },
+  { nombre: 'Volcán de Chocolate',  descripcion: 'Chocolate con frutos rojos y torta volcán',                              cardBg: '#C4B687', cardDark: false, img: '/images/Volcan%20de%20choco.png' },
+  { nombre: 'Raffaello',            descripcion: 'Chocolate blanco con coco y crocante de almendras',                      cardBg: '#C4B687', cardDark: false, img: '/images/Raffaello.png' },
+  { nombre: 'Pavlova',              descripcion: 'Crema americana con frutos rojos y merengue',                            cardBg: '#C4B687', cardDark: false, img: '/images/Pavlova.png' },
+  { nombre: 'Marquise',             descripcion: 'Chocolate con dulce de leche natural y merengue italiano',               cardBg: '#C4B687', cardDark: false, img: '/images/Marquise.png' },
+  { nombre: 'Choco Menta',          descripcion: 'Helado de chocolate semi amargo con menta fresca',                       cardBg: '#C4B687', cardDark: false, img: '/images/Choco%20menta.png' },
 ]
 
 const galeria = [
-  { label: 'Medialunas',           from: '#C4B687', to: '#8a7050', image: '/images/medialuna.webp' },
-  { label: 'Torta del día',        from: '#D79074', to: '#5F3641', image: '/images/torta.png' },
-  { label: 'Café de especialidad', from: '#3a1e28', to: '#5F3641', image: '/images/cafe.jpg' },
-  { label: 'Cheesecake',           from: '#C4B687', to: '#5F3641' },
-  { label: 'Alfajores',            from: '#D79074', to: '#C4B687', image: '/images/alfajores.jpg' },
-  { label: 'Tiramisú',             from: '#5F3641', to: '#3a1e28', image: '/images/tiramisu.png' },
-  { label: 'Tostados',             from: '#C4B687', to: '#D79074', image: '/images/tostado1.png' },
-  { label: 'Facturas',             from: '#EFEDDC', to: '#D79074', image: '/images/facturas.jpg' },
+  { label: 'Medialunas',                    from: '#C4B687', to: '#8a7050', image: '/images/medialuna.webp' },
+  { label: 'Medialuna Jamón y Queso',       from: '#D79074', to: '#5F3641' },
+  { label: 'Galletita Tentación Chocolate', from: '#3a1e28', to: '#5F3641' },
+  { label: 'Brownies',                      from: '#C4B687', to: '#5F3641' },
+  { label: 'Cookies NY',                    from: '#D79074', to: '#C4B687' },
+  { label: 'Cookie Pistachio',              from: '#8a7050', to: '#C4B687' },
+  { label: 'Budines',                       from: '#5F3641', to: '#D79074' },
 ]
 
 const BG = '#EFEDDC'
@@ -231,16 +230,12 @@ export default function GustosSection() {
               {/* Ilustración — llena la card con blend mode */}
               <div className="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0">
                 <Image
-                  src="/images/heladodibujo.png"
+                  src={s.img}
                   alt=""
                   fill
                   className="object-contain object-center"
-                  style={{
-                    mixBlendMode: s.cardDark ? 'screen' : 'multiply',
-                    filter: s.cardDark ? 'invert(1)' : 'none',
-                    opacity: 0.7,
-                    transform: s.imgT,
-                  }}
+                  style={{}}
+
                   draggable={false}
                 />
               </div>

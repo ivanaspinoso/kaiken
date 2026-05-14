@@ -119,11 +119,11 @@ export default function Navigation() {
           >
             <a href="#" className="mb-2" onClick={() => setOpen(false)}>
               <Image
-                src="/images/logo.png"
+                src="/images/kaikenlogocompletoverde.PNG"
                 alt="Kaiken"
-                width={160}
-                height={60}
-                className="h-12 w-auto object-contain"
+                width={320}
+                height={120}
+                className="h-24 w-auto object-contain"
               />
             </a>
 

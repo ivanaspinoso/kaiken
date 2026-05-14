@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\Lenovo\\\\kaiken\" -Recurse | Where-Object { !$_.PSIsContainer } | Select-Object FullName)",
+      "WebFetch(domain:faricci.com)",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\Lenovo\\\\kaiken\\\\public\\\\images\\\\\" | Select-Object Name, @{N='KB';E={[math]::Round\\($_.Length/1KB,1\\)}})",
+      "Read(//mnt/c/Users/Lenovo/kaiken/public/**)",
+      "Bash(dir \"C:\\\\Users\\\\Lenovo\\\\kaiken\\\\public\\\\images\")",
+      "WebFetch(domain:pedir.tucan.la)",
+      "WebFetch(domain:www.faricci.com)",
+      "WebFetch(domain:www.rapanui.com.ar)",
+      "Bash(npm run *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "Bash(git remote *)",
+      "Bash(echo \"EXIT:$?\")",
+      "Bash(git branch *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(timeout 8 bash -c \"until curl -s http://localhost:3000 > /dev/null 2>&1; do sleep 1; done && echo ready\")"
+    ]
+  }
+}
