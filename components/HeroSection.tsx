@@ -20,8 +20,10 @@ export default function HeroSection() {
           muted
           loop
           playsInline
+          preload="metadata"
+          poster="/images/heladosfondo.png"
           className="absolute inset-0 w-full h-full object-cover"
-          src="/images/keikein%20nuevo.mp4"
+          src="/images/videokaiken.mp4"
         />
       </motion.div>
 

@@ -20,7 +20,9 @@
       "Bash(git push *)",
       "Bash(timeout 8 bash -c \"until curl -s http://localhost:3000 > /dev/null 2>&1; do sleep 1; done && echo ready\")",
       "Bash(dir C:\\\\Users\\\\Lenovo\\\\kaiken\\\\public *)",
-      "Bash(git commit *)"
+      "Bash(git commit *)",
+      "Bash(ffmpeg -i videokaiken.mp4 -vcodec libx264 -crf 28 -preset slow -acodec aac -b:a 128k -movflags +faststart videokaiken_opt.mp4)",
+      "PowerShell(Get-Command *)"
     ]
   }
 }
