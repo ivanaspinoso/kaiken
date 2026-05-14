@@ -55,6 +55,10 @@ export const metadata: Metadata = {
     title: 'Kaiken | Heladería · Cafetería · Pastelería Artesanal',
     description: 'Momentos dulces que merecen repetirse.',
   },
+  icons: {
+    icon: '/images/kaikenlogocompletoverde.PNG',
+    apple: '/images/kaikenlogocompletoverde.PNG',
+  },
   robots: {
     index: true,
     follow: true,
