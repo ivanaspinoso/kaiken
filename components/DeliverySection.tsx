@@ -17,11 +17,12 @@ export default function DeliverySection() {
       {/* Full-width background image */}
       <motion.div style={{ y: bgY }} className="absolute inset-0 scale-110" aria-hidden="true">
         <Image
-          src="/images/heladofondo.png"
+          src="/images/local12.jpg"
           alt=""
           fill
-          className="object-cover"
+          className="object-cover object-[center_70%]"
           sizes="100vw"
+          quality={100}
           priority
         />
         {/* Dark overlay so the text is legible */}
