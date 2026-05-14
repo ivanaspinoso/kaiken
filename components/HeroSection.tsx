@@ -23,7 +23,7 @@ export default function HeroSection() {
           preload="metadata"
           poster="/images/heladosfondo.png"
           className="absolute inset-0 w-full h-full object-cover"
-          src="/images/videokaiken.mp4"
+          src="/images/videomascorto.mp4"
         />
       </motion.div>
 
