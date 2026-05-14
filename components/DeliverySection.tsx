@@ -54,7 +54,7 @@ export default function DeliverySection() {
           </p>
 
           <motion.a
-            href="https://tucan.app/"
+            href="https://pedir.tucan.la/menu/KaikenItuzaingo/Delivery"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}

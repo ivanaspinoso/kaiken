@@ -67,7 +67,7 @@ export default function Navigation() {
 
           {/* CTA pill */}
           <a
-            href="https://tucan.app/"
+            href="https://pedir.tucan.la/menu/KaikenItuzaingo/Delivery"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => trackCTAClick('nav')}
@@ -139,7 +139,7 @@ export default function Navigation() {
             ))}
 
             <a
-              href="https://tucan.app/"
+              href="https://pedir.tucan.la/menu/KaikenItuzaingo/Delivery"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => { trackCTAClick('nav'); setOpen(false) }}

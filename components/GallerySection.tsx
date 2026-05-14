@@ -74,7 +74,7 @@ export default function GallerySection() {
             </h2>
           </div>
           <a
-            href="https://tucan.app/"
+            href="https://pedir.tucan.la/menu/KaikenItuzaingo/Delivery"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => trackCTAClick('hero')}
@@ -131,7 +131,7 @@ export default function GallerySection() {
           className="flex justify-center"
         >
           <a
-            href="https://tucan.app/"
+            href="https://pedir.tucan.la/menu/KaikenItuzaingo/Delivery"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => trackCTAClick('hero')}

@@ -104,7 +104,7 @@ export default function ExperienceSection() {
                   {cat.description}
                 </p>
                 <a
-                  href="https://tucan.app/"
+                  href="https://pedir.tucan.la/menu/KaikenItuzaingo/Delivery"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => trackCTAClick('hero')}

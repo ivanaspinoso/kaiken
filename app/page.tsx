@@ -1,4 +1,5 @@
 import Navigation from '@/components/Navigation'
+import WhatsAppButton from '@/components/WhatsAppButton'
 import HeroSection from '@/components/HeroSection'
 import DateElGustoSection from '@/components/DateElGustoSection'
 import SaboresSection from '@/components/SaboresSection'
@@ -31,6 +32,7 @@ export default function Home() {
      
       <InstagramSection />
       <Footer />
+      <WhatsAppButton />
     </main>
   )
 }

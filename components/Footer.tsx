@@ -135,7 +135,7 @@ export default function Footer() {
           </p>
           <div className="flex items-center gap-6">
             <a
-              href="https://tucan.app/"
+              href="https://pedir.tucan.la/menu/KaikenItuzaingo/Delivery"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => trackCTAClick('nav')}

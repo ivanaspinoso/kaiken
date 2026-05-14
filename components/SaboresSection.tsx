@@ -39,7 +39,7 @@ const categorias = [
     description: 'Todo lo que suma. Coberturas, toppings y complementos para personalizar tu pedido.',
     gradient: 'from-[#c47558] via-[#D79074] to-[#e8a882]',
     overlay: 'rgba(196,100,88,0.38)',
-    image: '/images/alfajores.jpg',
+    image: '/images/extras.jpeg',
     href: 'https://pedir.tucan.la/menu/KaikenItuzaingo/Sal%C3%B3n#CATEGORY_Extras',
   },
 ]

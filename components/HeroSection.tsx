@@ -50,7 +50,7 @@ export default function HeroSection() {
 
         {/* ── CTA ── */}
         <motion.a
-          href="https://tucan.app/"
+          href="https://pedir.tucan.la/menu/KaikenItuzaingo/Delivery"
           target="_blank"
           rel="noopener noreferrer"
           initial={{ opacity: 0, y: 16 }}

@@ -71,7 +71,7 @@ export default function CTAFinalSection() {
           className="flex flex-col sm:flex-row items-center justify-center gap-3"
         >
           <motion.a
-            href="https://tucan.app/"
+            href="https://pedir.tucan.la/menu/KaikenItuzaingo/Delivery"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
@@ -87,7 +87,7 @@ export default function CTAFinalSection() {
           </motion.a>
 
           <a
-            href="https://tucan.app/"
+            href="https://pedir.tucan.la/menu/KaikenItuzaingo/Delivery"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => trackCTAClick('cta_final')}

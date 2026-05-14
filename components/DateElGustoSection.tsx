@@ -61,7 +61,7 @@ export default function DateElGustoSection() {
           </p>
 
           <a
-            href="https://tucan.app/"
+            href="https://pedir.tucan.la/menu/KaikenItuzaingo/Delivery"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => trackCTAClick('hero')}
