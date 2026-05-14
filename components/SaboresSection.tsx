@@ -30,7 +30,7 @@ const categorias = [
     description: 'Recetas propias que van más allá del helado. El dulce con identidad Kaiken.',
     gradient: 'from-[#C4B687] via-[#a89570] to-[#8a7858]',
     overlay: 'rgba(196,182,135,0.38)',
-    image: '/images/dulcesdelacasa.png',
+    image: '/images/dulcesdelacasa.jpeg',
     href: 'https://pedir.tucan.la/menu/KaikenItuzaingo/Sal%C3%B3n#CATEGORY_Dulces_de_la_casa',
   },
   {

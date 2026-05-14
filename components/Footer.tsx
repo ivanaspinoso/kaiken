@@ -18,7 +18,7 @@ const navCols = [
 const socials = [
   {
     name: 'Instagram',
-    href: '#',
+    href: 'https://www.instagram.com/kaiken.helados',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" className="w-4 h-4" aria-hidden="true">
         <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" strokeWidth="1.5" />
@@ -29,7 +29,7 @@ const socials = [
   },
   {
     name: 'Facebook',
-    href: '#',
+    href: 'https://www.facebook.com/kaiken.heladeria/',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" className="w-4 h-4" aria-hidden="true">
         <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
@@ -38,7 +38,7 @@ const socials = [
   },
   {
     name: 'TikTok',
-    href: '#',
+    href: 'https://www.tiktok.com/@kaiken.helados?lang=en',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" className="w-4 h-4" aria-hidden="true">
         <path d="M9 12a4 4 0 104 4V4a5 5 0 005 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />

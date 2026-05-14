@@ -50,9 +50,8 @@ export default function DateElGustoSection() {
           <p className="font-sans font-light text-sm md:text-base text-burgundy/65 leading-relaxed mb-4">
             Elaboramos cada día{' '}
             <strong className="font-semibold text-burgundy">helados artesanales</strong>,{' '}
-            cafés de especialidad y pasteles de autor. Todo con ingredientes{' '}
-            <span className="text-terracotta font-medium">100% naturales</span>, sin atajos y
-            con mucha pasión por el detalle.
+            cafés de especialidad y pastelería hecha por nosotros. Todo con ingredientes{' '}
+            <span className="text-terracotta font-medium">100% naturales</span> y con enfoque en calidad.
           </p>
           <p className="font-sans font-light text-sm text-burgundy/50 leading-relaxed mb-10">
             Porque creemos que{' '}
