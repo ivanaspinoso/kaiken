@@ -48,8 +48,8 @@ const galeria = [
   { label: 'Medialunas',                    from: '#C4B687', to: '#8a7050', image: '/images/medialuna.webp' },
   { label: 'Medialuna Jamón y Queso',       from: '#D79074', to: '#5F3641', image: '/images/medialunas%20jyq.jpeg' },
   { label: 'Galletita Tentación Chocolate', from: '#3a1e28', to: '#5F3641', image: '/images/imagenkaiken1.jpeg' },
-  { label: 'Brownies',                      from: '#C4B687', to: '#5F3641', image: '/images/brownie.jpeg' },
-  { label: 'Cookies NY',                    from: '#D79074', to: '#C4B687', image: '/images/cookie.jpeg' },
+  { label: 'Brownies',                      from: '#C4B687', to: '#5F3641', image: '/images/browniekaiken.jpeg' },
+  { label: 'Cookies NY',                    from: '#D79074', to: '#C4B687', image: '/images/cookiekaiken.jpeg' },
   { label: 'Cookie Pistachio',              from: '#8a7050', to: '#C4B687', image: '/images/pistachogalletita.jpeg' },
   { label: 'Budines',                       from: '#5F3641', to: '#D79074', image: '/images/budines.jpeg' },
 ]
