@@ -88,8 +88,8 @@ export default function DateElGustoSection() {
             className="absolute inset-0"
           >
             <Image
-              src="/images/imagentest.jpg"
-              alt="Helados artesanales Kaiken"
+              src="/images/imagenkaiken2.jpeg"
+              alt="Vainilla Kaikén — helados artesanales"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 60vw"

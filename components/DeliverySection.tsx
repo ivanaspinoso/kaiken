@@ -17,7 +17,7 @@ export default function DeliverySection() {
       {/* Full-width background image */}
       <motion.div style={{ y: bgY }} className="absolute inset-0 scale-110" aria-hidden="true">
         <Image
-          src="/images/local12.jpg"
+          src="/images/dateelgusto.jpg"
           alt=""
           fill
           className="object-cover object-[center_70%]"

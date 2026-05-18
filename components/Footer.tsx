@@ -112,10 +112,21 @@ export default function Footer() {
             <h3 className="font-sans font-semibold text-[9px] tracking-[0.35em] uppercase text-cream/50 mb-5">
               Dónde estamos
             </h3>
-            <address className="not-italic font-sans text-sm text-cream/50 leading-relaxed mb-5">
+            <a
+              href="https://maps.google.com/?q=Gral+Miguel+Soler+462,+Ituzaingo,+Buenos+Aires"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="not-italic font-sans text-sm text-cream/50 leading-relaxed mb-5 hover:text-terracotta transition-colors duration-200 block"
+            >
               Gral. Miguel Soler 462<br />
               Ituzaingó, Buenos Aires
-            </address>
+              <span className="block text-[10px] tracking-[0.2em] uppercase text-terracotta/60 mt-1.5 hover:text-terracotta">
+                Ver en Google Maps →
+              </span>
+            </a>
+            <p className="font-sans text-sm text-cream/45 leading-relaxed mb-1">
+              <span className="text-cream/70">Lun</span> 14:00–23:00
+            </p>
             <p className="font-sans text-sm text-cream/45 leading-relaxed mb-1">
               <span className="text-cream/70">Mar — Jue</span> 12:00–00:00
             </p>

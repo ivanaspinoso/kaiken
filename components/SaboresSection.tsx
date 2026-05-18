@@ -21,7 +21,7 @@ const categorias = [
     description: 'Creaciones únicas que combinan texturas y sabores. Para los que quieren algo más.',
     gradient: 'from-[#5F3641] via-[#3a2028] to-[#2a1520]',
     overlay: 'rgba(95,54,65,0.48)',
-    image: '/images/postres.png',
+    image: '/images/imagenkaiken6.jpeg',
     href: 'https://pedir.tucan.la/menu/KaikenItuzaingo/Sal%C3%B3n#CATEGORY_Postres_helados',
   },
   {

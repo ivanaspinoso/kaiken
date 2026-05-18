@@ -81,10 +81,21 @@ export default function HistoriaSection() {
             transition={{ duration: 0.6, delay: 0.55 }}
             className="mt-10 pt-8 border-t border-burgundy/10"
           >
-            <address className="not-italic font-sans text-sm text-burgundy/60 leading-relaxed mb-5">
+            <a
+              href="https://maps.google.com/?q=Gral+Miguel+Soler+462,+Ituzaingo,+Buenos+Aires"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="not-italic font-sans text-sm text-burgundy/60 leading-relaxed mb-5 hover:text-terracotta transition-colors duration-200 block"
+            >
               Gral. Miguel Soler 462<br />
               Ituzaingó, Buenos Aires
-            </address>
+              <span className="block text-[10px] tracking-[0.2em] uppercase text-terracotta/70 mt-1.5">
+                Ver en Google Maps →
+              </span>
+            </a>
+            <p className="font-sans text-sm text-burgundy/50 mb-1">
+              <span className="text-burgundy/70 font-medium">Lun</span> &nbsp;14:00–23:00
+            </p>
             <p className="font-sans text-sm text-burgundy/50 mb-1">
               <span className="text-burgundy/70 font-medium">Mar — Jue</span> &nbsp;12:00–00:00
             </p>
