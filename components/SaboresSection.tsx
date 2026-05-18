@@ -12,7 +12,7 @@ const categorias = [
     description: 'Elaborados a mano con ingredientes naturales, sin conservantes. La base de todo lo que somos.',
     gradient: 'from-[#D79074] via-[#c47558] to-[#a85a3a]',
     overlay: 'rgba(215,144,116,0.38)',
-    image: '/images/heladokaiken.png',
+    image: '/images/imagenkaiken4.jpeg',
     href: 'https://pedir.tucan.la/menu/KaikenItuzaingo/Sal%C3%B3n#CATEGORY_Helados_artesanales',
   },
   {
@@ -39,7 +39,7 @@ const categorias = [
     description: 'Todo lo que suma. Coberturas, toppings y complementos para personalizar tu pedido.',
     gradient: 'from-[#c47558] via-[#D79074] to-[#e8a882]',
     overlay: 'rgba(196,100,88,0.38)',
-    image: '/images/extras.jpeg',
+    image: '/images/extrakaiken.jpeg',
     href: 'https://pedir.tucan.la/menu/KaikenItuzaingo/Sal%C3%B3n#CATEGORY_Extras',
   },
 ]
