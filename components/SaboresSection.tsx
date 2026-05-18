@@ -40,6 +40,7 @@ const categorias = [
     gradient: 'from-[#c47558] via-[#D79074] to-[#e8a882]',
     overlay: 'rgba(196,100,88,0.38)',
     image: '/images/extrakaiken.jpeg',
+    imgPosition: 'object-[center_75%]',
     href: 'https://pedir.tucan.la/menu/KaikenItuzaingo/Sal%C3%B3n#CATEGORY_Extras',
   },
 ]
@@ -89,13 +90,13 @@ export default function SaboresSection() {
               className="group bg-[#F5F3E8] rounded-3xl overflow-hidden shadow-[0_4px_24px_rgba(0,0,0,0.3)] hover:shadow-[0_16px_48px_rgba(0,0,0,0.4)] transition-all duration-400 cursor-pointer"
             >
               {/* Image / color band */}
-              <div className={`relative h-40 md:h-48 overflow-hidden ${cat.image ? '' : `bg-gradient-to-br ${cat.gradient}`}`}>
+              <div className={`relative h-80 md:h-96 overflow-hidden ${cat.image ? '' : `bg-gradient-to-br ${cat.gradient}`}`}>
                 {cat.image && (
                   <Image
                     src={cat.image}
                     alt={cat.title}
                     fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    className={`object-cover ${cat.imgPosition ?? 'object-center'} transition-transform duration-500 group-hover:scale-105`}
                     sizes="(max-width: 640px) 100vw, 50vw"
                     draggable={false}
                   />
